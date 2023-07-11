@@ -48,7 +48,7 @@ int main() {
 	scanf("%c", &sym);
 	if (sym >= 48 && sym <= 57) {
 		printf("True\n");
-	} else printf("False\n");4.Գրեք ծրագիր, որը թույլ կտա օգտվողին մուտքագրել տառ, ստուգել և տպել տառը բաղաձայն է, թե ձայնավոր:
+	} else printf("False\n");
 
 	return 0;
 }
@@ -67,11 +67,11 @@ int main() {
 	scanf("%c", &entered_letter);
 	for (int i = 0; i < 5; i++) {
 		if (entered_letter == list[i]) {
-			printf("%c Yes! That's a vowel\n");
+			printf("%c Yes! That's a vowel\n", entered_letter);
 			return 0;
 		}
 	}
-	printf("%c That's a consonant\n");
+	printf("%c That's a consonant\n", entered_letter);
 	return 0;
 }
 
